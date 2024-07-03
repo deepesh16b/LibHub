@@ -37,7 +37,7 @@ const CartBox = styled(Box)(({ theme }) => ({
 }));
 const LoginButton = styled(Button)(({ theme }) => ({
   background: "#fff",
-  color: " #2874f0",
+  color: " #00B560",
   borderRadius: "1px",
   padding: " 4px 40px",
   textTransform: "none",
@@ -52,14 +52,14 @@ const LoginButton = styled(Button)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     variant: "text",
-    backgroundColor: " #2874f0",
-    color: "#fff",
-    padding: " 4px 10px",
-    paddingRight: 0,
+    backgroundColor: " #fff",
+    color: "#00B560",
+    padding: " 4px 8px",
+    // paddingRight: 0,
     // position: "absolute",
     // left: "auto",
     "&:hover": {
-      backgroundColor: " #2874f0",
+      backgroundColor: " #00B560",
       color: "#fff",
       opacity: "1",
       scale: "1.0",

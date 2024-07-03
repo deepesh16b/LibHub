@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const logoURL =
-    "https://iili.io/dK76u1V.png";
+    "https://iili.io/dKazscJ.png";
   // const subLogoURL =
   //   "https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png";
 
@@ -23,7 +23,7 @@ const Header = () => {
     height: " 62px",
     boxShadow: "none",
     [theme.breakpoints.down("md")]: {
-      height: " 104px",
+      height: " 115px",
     },
   }));
   const StyledBox = styled(Link)(({ theme }) => ({
