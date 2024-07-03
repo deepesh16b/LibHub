@@ -24,7 +24,7 @@ const Component = styled(Box)(({ theme }) => ({
 }));
 const Image = styled(Box)`
   background: #00B560
-    url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png)
+    url(https://iili.io/dKaBNVa.png)
     center 85% no-repeat;
   width: 33%;
   height: 100%;

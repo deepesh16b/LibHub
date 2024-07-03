@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 10000;
 
 const user = process.env.USER_NAME;
 const password = process.env.USER_PASSWORD;
