@@ -17,24 +17,31 @@ app.use(
 );
 
 app.use(express.urlencoded({ extended: true }));
-const PORT = 8000;
+app.use(bodyParser.json({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const PORT = process.env.PORT || 8000;
 
 const user = process.env.USER_NAME;
 const password = process.env.USER_PASSWORD;
 
-Connection(user, password);
+const startServer = async () => {
+  try {
+    await Connection(user, password);
+    DefaultData();
 
-app.listen( process.env.PORT || PORT, () =>
-  console.log(`Server started at port ${PORT}!`)
-);
+    app.use("/", Route);
 
-DefaultData();
+    app.get("/getKey", (req, res) => {
+      console.log("getapikey successsss");
+      res.status(200).json({ key: process.env.RAZORPAY_API_KEY });
+    });
 
-app.use(bodyParser.json({ extended: true }));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/", Route);
+    app.listen(PORT, () => console.log(`Server started at port ${PORT}!`));
+  } catch (error) {
+    console.error("Failed to connect to the database", error);
+    process.exit(1); // Exit the process with failure
+  }
+};
 
-app.get("/getKey", (req, res) => {
-  console.log("getapikey successsss");
-  res.status(200).json({ key: process.env.RAZORPAY_API_KEY });
-});
+startServer();

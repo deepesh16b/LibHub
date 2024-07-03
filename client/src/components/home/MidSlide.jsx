@@ -28,7 +28,7 @@ export const MidSlide = ({ loading, products }) => {
  
   const theme = createTheme();
   const adURL =
-    "https://rukminim1.flixcart.com/flap/464/708/image/633789f7def60050.jpg?q=70";
+    "https://iili.io/dKYbKSj.png";
 
   return (
     <ThemeProvider theme={theme}>

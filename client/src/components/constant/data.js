@@ -15,8 +15,8 @@ export const bannerData = [
     { id: 2, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F8DC6D2CF47Young_Adult_3.png' },
     { id: 3, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2FEA4B2A260CYoung_Adult_2.png' },
     { id: 4, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F5B57C38873Young_Adult_1.png' },
-    // { id: 5, url: 'https://rukminim2.flixcart.com/fk-p-flap/3350/560/image/270d3c2c94309b55.png?q=50' },
-    // { id: 6, url: 'https://rukminim2.flixcart.com/fk-p-flap/3300/560/image/a80893b88f1b9368.png?q=50' },
+    { id: 5, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F59C61A465CHero_Banner_1D.jpg' },
+    { id: 6, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F4D526A6A93Science_%26_Fun_D.jpg' },
     // { id: 7, url: 'https://rukminim2.flixcart.com/fk-p-flap/3300/560/image/3f678a35c5eebd8f.png?q=50' },
     // { id: 8, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50' }
 
