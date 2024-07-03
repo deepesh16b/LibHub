@@ -37,7 +37,7 @@ export const MidSlide = ({ loading, products }) => {
           <Slide loading={loading}  products={products} title="Deals of the Day" timer={true} />
         </LeftComponent>
         <RightComponent>
-          <img src={adURL} style={{ width: 217 }} alt="ad" />
+          <img src={adURL} style={{ width: 230 }} alt="ad" />
         </RightComponent>
       </Component>
     </ThemeProvider>
