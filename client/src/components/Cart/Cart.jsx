@@ -1,5 +1,6 @@
 import { URL } from "../../serverLink";
-import { useEffect, useState } from "react";
+import { useEffect, useContext, useState } from "react";
+import { LoginContext } from "../../contexts/LoginProvider.jsx";
 import { Box, Typography, Button, Grid, styled } from "@mui/material";
 import {
   // useNavigate,
@@ -61,6 +62,7 @@ const StyledButton = styled(Button)`
 `;
 
 const Cart = () => {
+  const { account } = useContext(LoginContext);
   const cartDetails = useSelector((state) => state.cart);
   const { cartItems } = cartDetails;
   const [amount, setAmount] = useState(100);
@@ -78,10 +80,14 @@ const Cart = () => {
   // const navigate = useNavigate();
 
   const buyNow = async () => {
-    const {data : {key}} = await axios.get(`${URL}/getKey`, {
-      responseType: "json",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
+    if(!account){
+      alert("Please Login or Signup First!")
+    }else{
+
+      const {data : {key}} = await axios.get(`${URL}/getKey`, {
+        responseType: "json",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
       },
     });
     console.log("get api key success in frontend");
@@ -112,11 +118,12 @@ const Cart = () => {
       },
     };
     console.log("razorpay seccess in frobntend");
-
+    
     var razor = new window.Razorpay(options);
       razor.open();
+    }
   };
-
+  
   return (
     <>
       {cartItems.length ? (

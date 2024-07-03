@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useContext} from "react";
 
 import { Button, Box, styled } from "@mui/material";
 import { ShoppingCart as Cart, FlashOn as Flash } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-
+import { LoginContext } from "../../contexts/LoginProvider.jsx";
 // import { payUsingPaytm } from '../../service/api';
 // import { post } from '../../utils/paytm';
 
@@ -47,15 +47,20 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const ActionItem = ({ product }) => {
   const navigate = useNavigate();
   const { id } = product;
-
+  const { account } = useContext(LoginContext);
   const [quantity] = useState(1);
   const dispatch = useDispatch();
   
   const buyNow = async () => {
-    const {
-      data: { key },
-    } = await axios.get(`${URL}/getKey`);
-    let amount = product.price.cost + 40;
+    if(!account){
+      alert("Please Login or Signup First!")
+      
+    }else{
+
+      const {
+        data: { key },
+      } = await axios.get(`${URL}/getKey`);
+      let amount = product.price.cost + 40;
     const {
       data: { order },
     } = await axios.post(`${URL}/checkout`, {
@@ -83,14 +88,20 @@ const ActionItem = ({ product }) => {
         color: "#2874f0",
       },
     };
-
+    
     var razor = new window.Razorpay(options);
     razor.open();
+  }
   };
 
   const addItemToCart = () => {
-    dispatch(addToCart(id, quantity));
-    navigate("/cart");
+    if(!account){
+      alert("Please Login or Signup First!")
+    }else{
+
+      dispatch(addToCart(id, quantity));
+      navigate("/cart");
+    }
   };
 
   return (
