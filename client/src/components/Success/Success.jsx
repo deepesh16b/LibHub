@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const Component = styled(Box)(({ theme }) => ({
   width: "40%",
-  height: "85vh",
+  height: "94vh",
   background: "#fff",
   margin: "80px auto",
   boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" ,
