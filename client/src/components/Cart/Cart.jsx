@@ -80,10 +80,9 @@ const Cart = () => {
   // const navigate = useNavigate();
 
   const buyNow = async () => {
-    if(!account){
+    if(account){
       alert("Please Login or Signup First!")
     }else{
-
       const {data : {key}} = await axios.get(`${URL}/getKey`, {
         responseType: "json",
         headers: {
@@ -100,11 +99,11 @@ const Cart = () => {
       key, 
       amount: order.amount, 
       currency: "INR",
-      name: "Flipkart",
+      name: "LibraryHub",
       description: "Complete the Payment",
-      image: 'https://backend.insideiim.com/wp-content/uploads/2015/08/Flipkart-logo-insideiim.png',
+      image: 'https://iili.io/dKaBNVa.png',
       order_id: order.id,
-      callback_url: `${URL}/paymentVerification`,
+      callback_url: `${URL}/paymentVerification?product_id=${cartItems[0].id}`,
       prefill: {
         name: "Deepesh Bhardwaj",
         email: "deepeshbhardwaj58@example.com",
@@ -114,7 +113,7 @@ const Cart = () => {
         address: "Razorpay Corporate Office",
       },
       theme: {
-        color: "#2874f0",
+        color: "#00b560",
       },
     };
     console.log("razorpay seccess in frobntend");
