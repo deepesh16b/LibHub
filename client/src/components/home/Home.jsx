@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import { Box, styled } from "@mui/material";
-import { getProducts } from "../../redux/actions/productsAction";
-import { useDispatch, useSelector } from "react-redux";
+// import { getProducts } from "../../redux/actions/productsAction";
+// import { useDispatch, useSelector } from "react-redux";
 import { Slide } from "./Slide";
 import { MidSlide } from "./MidSlide";
 import { MidSection } from "./MidSection";
-
+import { productsData } from "../constant/data";
 const Container = styled(Box)(({ theme }) => ({
   padding:' 15px 10px',
   background: '#f1f3f6',
@@ -16,12 +16,14 @@ const Container = styled(Box)(({ theme }) => ({
   }
 }));
 const Home = () => {
-  const { loading,products } = useSelector((state) => state.getProducts);
-  console.log(products);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getProducts());
-  }, [dispatch]);
+  // const { loading,products } = useSelector((state) => state.getProducts);
+  // console.log(products);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getProducts());
+  // }, [dispatch]);
+  const loading = 0;
+  const products = productsData;
   return (
     <>
       <Navbar />

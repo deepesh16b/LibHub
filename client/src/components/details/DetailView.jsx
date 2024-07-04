@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+// import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getProductDetails } from "../../redux/actions/productsAction";
+// import { getProductDetails } from "../../redux/actions/productsAction";
 import { Box, styled, Grid, Typography } from "@mui/material";
 import ProductDetail from "./ProductDetail";
 import ActionItem from "./ActionItem";
-
+import { productsData } from "../constant/data";
 const fassured =
   "https://iili.io/dKYcxBp.png";
 
@@ -40,13 +40,17 @@ const RightContainer = styled(Grid)(({ theme }) => ({
 }));
 
 export const DetailView = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const { id } = useParams();
-  const { loading, product } = useSelector((state) => state.getProductDetails);
+  // const { loading, product } = useSelector((state) => state.getProductDetails);
 
-  useEffect(() => {
-    if (product && product.id !== id) dispatch(getProductDetails(id));
-  }, [dispatch, id, loading, product]);
+  // useEffect(() => {
+  //   if (product && product.id !== id) dispatch(getProductDetails(id));
+  // }, [dispatch, id, loading, product]);
+  const loading = 0;
+  const products = productsData;
+  const product = products.find((item) => item.id === id);
+
   return (
     <Component>
       <Box></Box>
