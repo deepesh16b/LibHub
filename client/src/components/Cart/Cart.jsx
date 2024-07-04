@@ -80,7 +80,7 @@ const Cart = () => {
   // const navigate = useNavigate();
 
   const buyNow = async () => {
-    if(account){
+    if(!account){
       alert("Please Login or Signup First!")
     }else{
       const {data : {key}} = await axios.get(`${URL}/getKey`, {

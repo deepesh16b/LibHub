@@ -93,7 +93,7 @@ const ActionItem = ({ product }) => {
   };
 
   const addItemToCart = () => {
-    if (account) {
+    if (!account) {
       alert("Please Login or Signup First!");
     } else {
       dispatch(addToCart(id, quantity));
