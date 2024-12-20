@@ -11,12 +11,12 @@ export const navData = [
 ];
 
 export const bannerData = [
-    { id: 1, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F52DADD2615Disney_Home_Page_Hero_Banner_Desktop_(1).jpg' },
-    { id: 2, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F8DC6D2CF47Young_Adult_3.png' },
-    { id: 3, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2FEA4B2A260CYoung_Adult_2.png' },
-    { id: 4, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F5B57C38873Young_Adult_1.png' },
-    { id: 5, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F59C61A465CHero_Banner_1D.jpg' },
-    { id: 6, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F4D526A6A93Science_%26_Fun_D.jpg' },
+    { id: 1, url: 'https://www.bookswagon.com/bannerimages/31_inr.jpg?v=3.4' },
+    { id: 2, url: 'https://www.bookswagon.com/bannerimages/81_inr.jpg?v=2.5' },
+    // { id: 3, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2FEA4B2A260CYoung_Adult_2.png' },
+    // { id: 4, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F5B57C38873Young_Adult_1.png' },
+    // { id: 5, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F59C61A465CHero_Banner_1D.jpg' },
+    // { id: 6, url: 'https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:2880:700:0/gravity:sm/plain/https%3A%2F%2Fs3-ap-south-1.amazonaws.com%2Fbookscape-s3-bucket%2F4D526A6A93Science_%26_Fun_D.jpg' },
     // { id: 7, url: 'https://rukminim2.flixcart.com/fk-p-flap/3300/560/image/3f678a35c5eebd8f.png?q=50' },
     // { id: 8, url: 'https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50' }
 

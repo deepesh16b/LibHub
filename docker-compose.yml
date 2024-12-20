@@ -1,0 +1,25 @@
+version: "3.8"
+
+services: 
+  server:
+    build:
+      context: ./server
+    container_name: server_container
+    ports:
+      - "10000:10000"
+    networks:
+      - libraryhub_network
+    env_file:
+      - ./server/.env
+  client:
+    build:
+      context: ./client
+    container_name: client_container
+    ports:
+      - "3000:3000"
+    networks:
+      - libraryhub_network
+
+networks:
+  libraryhub_network:
+    driver: bridge

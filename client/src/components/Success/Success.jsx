@@ -43,7 +43,7 @@ const Image = styled("img")(({ theme }) => ({
 }));
 const Container = styled(Box)`
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
 `;
 
 const ImageGif = styled("img")(({ theme }) => ({
@@ -61,10 +61,7 @@ const StyledButton = styled(Button)`
   border-radius: 2px;
   width: 200px;
   height: 45px;
-  "&:hover": {
-      backgroundColor: " #00B568",
-      color: "#fff",
-    },
+  
 `;
 const Success = () => {
   const handleDownload = () => {
