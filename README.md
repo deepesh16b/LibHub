@@ -1,4 +1,4 @@
-LibraryHub - Online eBook/Notes Platform: (MERN Stack )
+LibraryHub - Online eBook/Notes Platform: (MERN | AWS | Docker | Redux | Razorpay )
 
 Link: https://libraryhub16.netlify.app/
 
